@@ -1,0 +1,30 @@
+name: ttt-video
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - aiohttp==3.11.11
+      - decord==0.6.0
+      - einops==0.8.0
+      - natsort==8.4.0
+      - pytorch-lightning==2.5.0.post0
+      - pytz==2024.2
+      - safetensors==0.4.5
+      - tomli==2.2.1
+      - torch==2.6.0
+      - torchvision==0.21.0
+      - triton==3.2.0
+      - xformers==0.0.29.post3
+      - tqdm==4.67.1
+      - pillow==11.0.0
+      - transformers==4.47.1
+      - imageio==2.36.1
+      - sentencepiece==0.2.0
+      - imageio-ffmpeg==0.5.1
+      - wandb==0.19.1
+      - submitit==1.5.2
+      - scipy>=1.15.1

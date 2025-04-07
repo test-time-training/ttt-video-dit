@@ -1,0 +1,53 @@
+[
+ [
+   {
+     "text": "Jerry the brown mouse is standing on a wooden table in a kitchen. He's wearing a tiny chef's hat and holding a wooden spoon. Tom the blue-gray cat is crouched below the table, his tail twitching as he prepares to pounce. A wedge of yellow cheese sits on a plate near Jerry, who is gesturing proudly at his creation - a miniature cake made from cheese scraps.",
+     "requires_scene_transition": false,
+     "neg_text": "blurry image, deformed limbs, incorrect colors, floating objects, disproportionate features, unrealistic lighting"
+   },
+   {
+     "text": "The kitchen counter is cluttered with cooking utensils. Jerry is running across it, still wearing his chef's hat but now clutching the cheese wedge to his chest. Tom has leapt onto the counter, knocking over a salt shaker and flour canister in pursuit. Jerry slides under a mixing bowl while Tom skids on some spilled flour, his eyes wide with surprise as he loses his balance.",
+     "requires_scene_transition": true,
+     "neg_text": "poor composition, missing details, distorted perspective, unnatural poses, incorrect shadows, blurry textures"
+   },
+   {
+     "text": "Tom is sprawled on the kitchen floor, covered in white flour and surrounded by fallen kitchenware. Jerry sits safely atop the refrigerator, contentedly nibbling on his cheese wedge. A human's legs and slippered feet appear in the doorway, and Tom quickly attempts to gather the scattered cooking items. Jerry watches with amusement as Tom frantically tries to clean up the mess before slowly fading to black.",
+     "requires_scene_transition": true,
+     "neg_text": "inconsistent style, warped proportions, incorrect anatomy, floating objects, blurry details, poor lighting"
+   }
+ ],
+ [
+   {
+     "text": "Tom the blue-gray cat is lounging in a comfortable armchair in a cozy living room, reading a newspaper. His eyes are half-closed in relaxation, and he's wearing a pair of small reading glasses perched on his nose. A fire crackles in the stone fireplace nearby. Unnoticed by Tom, Jerry the brown mouse is tiptoeing across the mantelpiece, eyeing a plate of cookies on the side table next to Tom's chair.",
+     "requires_scene_transition": false,
+     "neg_text": "fuzzy outlines, anatomical errors, distorted furniture, unnatural lighting, unrealistic textures, disproportionate objects"
+   },
+   {
+     "text": "The living room is now in disarray. Tom has abandoned his newspaper, which lies crumpled on the floor, and is standing on the armchair. He's reaching with an extended paw toward Jerry, who is balancing precariously on a hanging light fixture above. Jerry is clutching a cookie nearly as big as himself while dangling from the light's chain, his expression a mixture of determination and mischief. Below them, several cushions and a small vase have been knocked to the floor.",
+     "requires_scene_transition": true,
+     "neg_text": "incorrect physics, blurry motion, distorted perspective, anatomical errors, missing details, unrealistic shadows"
+   },
+   {
+     "text": "The living room is now dark except for the glow from the dying embers in the fireplace. Tom is asleep back in his armchair, snoring softly with his reading glasses askew. Jerry has made a small bed for himself using Tom's crumpled newspaper, and is contentedly sleeping on it beneath the armchair. Half of the cookie rests beside him, saved for tomorrow. A clock on the wall shows it's late night as the scene slowly fades to black.",
+     "requires_scene_transition": true,
+     "neg_text": "excessive darkness, poor contrast, missing details, incorrect lighting, anatomical errors, unnatural shadows"
+   }
+ ],
+ [
+   {
+     "text": "Tom and Jerry are at a beach on a bright sunny day. Tom is stretched out on a red and white striped beach towel, wearing sunglasses and holding a tropical drink with a tiny umbrella. Jerry is nearby building an elaborate sand castle complete with towers and a moat. A blue ocean stretches out behind them under a clear sky, and colorful beach umbrellas dot the sand around them.",
+     "requires_scene_transition": false,
+     "neg_text": "unrealistic water, grainy sand texture, anatomical errors, incorrect perspective, blurry details, unnatural colors"
+   },
+   {
+     "text": "A large wave is approaching the shore. Tom has noticed it and is frantically gathering his beach items, his sunglasses now hanging crookedly from one ear. Jerry is oblivious to the danger, putting final touches on his sand castle which now has a small flag on top. Other beachgoers in the background are running away from the incoming water. Tom looks back and forth between the wave and Jerry with an expression of panic.",
+     "requires_scene_transition": true,
+     "neg_text": "unrealistic water physics, distorted expressions, anatomical errors, incorrect scale, blurry motion, perspective problems"
+   },
+   {
+     "text": "The beach is calm again as sunset approaches, painting the sky in orange and purple hues. Tom is soaking wet and covered in seaweed, looking disgruntled. Jerry is seated comfortably on Tom's head, completely dry and enjoying an ice cream cone. Remarkably, Jerry's sand castle has survived and now has a small moat filled with water around it. A few seashells and starfish have washed up nearby as the scene gradually fades to black.",
+     "requires_scene_transition": true,
+     "neg_text": "inaccurate lighting, anatomical errors, unrealistic water effects, blurry textures, disproportionate elements, incorrect shadows"
+   }
+ ]
+]

@@ -1,0 +1,46 @@
+[job]
+exp_name = "cogvideo-linear-18s"
+
+[model]
+name = "cogvideo"
+size = "5B"
+ssm_layer = "ttt_linear"
+ttt_base_lr = 1.0
+mini_batch_size = 16
+video_length = "18sec"
+
+[optimizer]
+name = "AdamW"
+lr = 1e-5
+lr_ssm = 1e-5
+lr_end = 1e-5
+lr_schedule = "linear"
+lr_ssm_schedule = "cosine"
+gradient_clipping_norm = 0.1
+
+[training]
+global_batch_size = 64
+grad_accum_steps = 1
+warmup_steps = 50
+steps = 1000
+adapter_method = "qkvo"
+dataset_path = TODO
+jsonl_paths = TODO
+
+[remat]
+transformer_checkpoint_layer_group_size = 1
+scan_checkpoint_group_size = 16
+
+[parallelism]
+fsdp_unsharded_dtype = 'bfloat16'
+dp_replicate = 8
+dp_sharding = 8
+tp_sharding = 1
+
+[checkpoint]
+interval = 500
+
+[wandb]
+project = "cogvideo_release"
+entity = "ttt-vid"
+log_interval = 1

@@ -1,0 +1,3 @@
+[submodule "ttt-tk"]
+	path = ttt-tk
+	url = https://github.com/test-time-training/ttt-tk

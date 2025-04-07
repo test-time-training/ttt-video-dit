@@ -1,0 +1,50 @@
+[job]
+exp_name = "cogvideo-linear-3s"
+
+[model]
+name = "cogvideo"
+size = "5B"
+ssm_layer = "ttt_linear"
+ttt_base_lr = 1.0
+mini_batch_size = 16
+video_length = "3sec"
+scale_factor = 1.0
+
+[eval]
+sampling_fps = 16
+sampling_num_frames = 13
+txt_maxlen = 498
+image_width = 720
+image_height = 480
+latent_channels = 16
+scale_factor = 0.7
+num_denoising_steps = 50
+output_dir = "./output"
+t5_model_dir = TODO
+vae_checkpoint_path = TODO
+
+[guider]
+scale = 6
+exp = 5
+num_steps = 50
+
+[discretization]
+shift_scale = 1.0
+
+[denoiser]
+num_idx = 1000
+quantize_c_noise = false
+
+[parallelism]
+fsdp_unsharded_dtype = 'bfloat16'
+dp_replicate = 1
+dp_sharding = 1
+tp_sharding = 1
+
+[remat]
+scan_checkpoint_group_size = 1e6 # avoid checkpoints during eval
+
+[wandb]
+project = "cogvideo-sampling"
+entity = "ttt-vid"
+log_interval = 1
