@@ -44,6 +44,9 @@ Please follow the instructions [here](https://github.com/THUDM/CogVideo/blob/mai
 
 > **Note**: We only use the 5B weights, not the 2B weights. Make sure you are downloading the correct model.
 
+## Annotation Download
+Text annotations for the 3-second Tom and Jerry segments used during training can be accessed [here](https://test-time-training.github.io/video-dit/assets/annotations.zip).
+
 ## Other Documentation
 - [Dataset](./docs/dataset.md)
 - [Training](./docs/training.md)
