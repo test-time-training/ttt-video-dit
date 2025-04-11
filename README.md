@@ -1,7 +1,7 @@
 # TTT-Video
 <img src="./docs/figures/hero.png" alt="Hero" style="width:100%;"/>
 TTT-Video is a repository for finetuning diffusion transformers for style transfer and context extension. We use Test-Time Training (TTT) layers to handle long-range relationships across the global context, while reusing the original pretrained model's attention layers for local attention on each three second segment.  <br> <br>
-In this repository, we include training and inference code for up to 63 second video generation. We finetune our model first at the original pretrained 3 second video length for style transfer and incorporating TTT layers. Then we train in stages at video lengths of 9 sec, 18 sec, 30 sec, and 63 sec for context extension.
+In this repository, we include training and inference code for 63 second video generation. We finetune our model first at the original pretrained 3 second video length for style transfer and incorporating TTT layers. Then, we train in stages at video lengths of 9 sec, 18 sec, 30 sec, and 63 sec for context extension.
 
 ## Model Architecture
 ![Architecture](./docs/figures/integration.jpg)
@@ -43,6 +43,8 @@ git submodule update --init --recursive
 Please follow the instructions [here](https://github.com/THUDM/CogVideo/blob/main/sat/README.md) to get the VAE and T5 encoder. To get the pretrained weights, download the `diffusion_pytorch_model-00001-of-00002.safetensors` and `diffusion_pytorch_model-00002-of-00002.safetensors` files from [HuggingFace](https://huggingface.co/THUDM/CogVideoX-5b/tree/main/transformer).
 
 > **Note**: We only use the 5B weights, not the 2B weights. Make sure you are downloading the correct model.
+
+> **Note**: These are the pretrained model weights, not the final model weights used to generate our demonstration videos.
 
 ## Annotation Download
 Text annotations for the 3-second Tom and Jerry segments used during training can be accessed [here](https://test-time-training.github.io/video-dit/assets/annotations.zip).
