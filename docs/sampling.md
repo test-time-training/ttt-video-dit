@@ -8,6 +8,15 @@ Sampling is the process of generating videos from text prompts using the trained
 
 During sampling, the model takes text input structured into scenes and segments and progressively generates video frames by iteratively denoising random noise tensors guided by the input prompts. The diffusion process leverages classifier-free guidance and can incorporate negative conditioning to enhance video coherence and scene transitions.
 
+## Model Loading
+### CogVideoX
+We start our finetuning from [CogVideoX 5B](https://huggingface.co/THUDM/CogVideoX-5b) pretrained weights available on HuggingFace. We include a weight conversion script that downloads the weights and converts the model `state_dict` into the correct format.
+
+```bash
+bash scripts/convert_weights_from_hf.sh
+```
+
+You will only need to run this script to sample with CogVideoX weights or to begin finetuning with our training code.
 ## Sampling Pipeline
 
 At a high level, the sampling pipeline consists of:  
