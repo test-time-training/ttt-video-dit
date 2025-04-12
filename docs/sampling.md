@@ -16,8 +16,7 @@ We start our finetuning from [CogVideoX 5B](https://huggingface.co/THUDM/CogVide
 bash scripts/convert_weights_from_hf.sh
 ```
 
-You will only need to run this script to sample with CogVideoX weights or beginning finetuning with our training code.
-
+You will only need to run this script to sample with CogVideoX weights or to begin finetuning with our training code.
 ## Sampling Pipeline
 
 At a high level, the sampling pipeline consists of:  
