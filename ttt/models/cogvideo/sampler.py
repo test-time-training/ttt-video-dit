@@ -124,7 +124,7 @@ class ModelLoader:
         model.init_ssm_weights()
 
         try:
-            # Expected dict for finetuned checkpoints>
+            # Expected dict for finetuned checkpoints
             state_dict = {MODEL_STATE_DICT_KEY: get_model_state_dict(model)}
             dcp.load(state_dict=state_dict, checkpoint_id=job_config.checkpoint.init_state_dir)  # type: ignore
             state_dict = state_dict[MODEL_STATE_DICT_KEY]
