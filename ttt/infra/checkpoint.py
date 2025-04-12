@@ -52,9 +52,9 @@ class Checkpointer:
             state_dict = get_model_state_dict(self.model)
             self._load(path, state_dict)
         except RuntimeError:
-            state_dict = {"model": get_model_state_dict(self.model)}
+            state_dict = {MODEL_STATE_DICT_KEY: get_model_state_dict(self.model)}
             self._load(path, state_dict)
-            state_dict = state_dict["model"]
+            state_dict = state_dict[MODEL_STATE_DICT_KEY]
 
         set_model_state_dict(self.model, model_state_dict=state_dict, options=StateDictOptions(strict=True))
 
